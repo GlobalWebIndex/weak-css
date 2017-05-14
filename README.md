@@ -281,5 +281,5 @@ as solution for problems he describes but we still consider this to be really hi
 
 ## Final Thoughts
 
-As with all best practices never stop questioning values/costs and ideas described bellow. Following rules
-that doesn't make sense any more or don't really fit your need is sometimes worse than having not rules.
+As with all "best practices" never stop questioning values/costs and their impact on your work. Following rules
+which doesn't make sense anymore or don't really fit your needs is maybe worse than having no rules at all.
