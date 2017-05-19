@@ -38,7 +38,7 @@ democratic agreement of people imposed to follow them.
 
 ![](media/mozzaic.jpg)
 
-CSS are way too complex. Not necessary complex learn or to understand but complex to reason about.
+CSS are way too complex. Not necessary too complex to learn or to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
 many rules can be mixed together each with different specificity. Especially in growing systems
 this complexity can reach the point of very high maintenance cost quickly.
