@@ -2,12 +2,12 @@
 
 **status: draft**
 
+![](media/life.jpg)
+
 Weak Css is methodology and naming convention for Html and Css classes which prioritise weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
 To some degree it's based on [BEM](http://getbem.com/) philosophy even though one might see
 similarities with [OOCSS](http://oocss.org/) as well.
-
-![](media/head.jpg)
 
 Weak Css prefers BEM's determinism and OOCSS's modularity but takes both on different level.
 In Weak Css we're not talking about *Block, Element and Modifier* but rather about
@@ -16,7 +16,7 @@ In Weak Css we're not talking about *Block, Element and Modifier* but rather abo
 like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
 its pinciples can be used regardless on technology used.
 
-## Philosophy is based on:
+## Philosophy is Based on:
 
 - Concern separation - *Template should describe what no how*
 - Determinism - *Styles should contain whole information*
@@ -36,6 +36,8 @@ democratic agreement of people imposed to follow them.
 
 ## Introduction
 
+![](media/sepia.jpg)
+
 Css are way too complex. Not complex to learn nor to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
 many rules can be mixed together each with different specificity. Especially in growing systems
@@ -46,10 +48,9 @@ Block, Element and modifier. From our experience pure beam can lead to real expl
 names on Element level namespace especially in applications where UI seems to be rather nested
 than listed.
 
-
-![](media/middle.jpg)
-
 ## Basic Rules
+
+![](media/mozzaic.jpg)
 
 This is list of the most important rules to follow.
 
@@ -165,6 +166,8 @@ level yourself and then expect other to follow your example.
 
 ## Additional Rules to Consider
 
+![](media/skull.jpg)
+
 There are few more additional rules that can be applied. Usually it's good to enforce those once project itself
 spawn spike or MVP phase and maintainability becomes primary concern.
 
@@ -193,7 +196,6 @@ should be always before `color`, `border-radius` or `font-style`.
 
 Do you really know what all your resets are doing? How much will you be afraid to change or delete them in year or two from now?
 
-![](media/bottom.jpg)
 
 ## Example
 
@@ -274,6 +276,8 @@ Following example is written in SCSS and demonstrates how more feature complete 
 
 ## Links
 
+![](media/asian.jpg)
+
 Link on additional tools and resources
 
 ### Elm abstraction for working with Weak Css styles
@@ -287,6 +291,8 @@ is [Philip Walton's article describing problems with CSS](https://philipwalton.c
 as solution for problems he describes but we still consider this to be really high quality resource about this topic.
 
 ## Final Thoughts
+
+![](media/all.jpg)
 
 As with all "best practices" never stop questioning values/costs and their impact on your work. Following rules
 which doesn't make sense anymore or don't really fit your needs is maybe worse than having no rules at all.
