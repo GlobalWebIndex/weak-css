@@ -36,7 +36,7 @@ democratic agreement of people imposed to follow them.
 
 ## :wave: Introduction
 
-![](media/sepia.jpg)
+![](media/asian.jpg)
 
 Css are way too complex. Not complex to learn nor to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
@@ -198,6 +198,8 @@ Do you really know what all your resets are doing? How much will you be afraid t
 
 ## :construction_worker: Example
 
+![](media/fight.jpg)
+
 Following example is written in SCSS and demonstrates how more feature complete implementation can look like.
 
 ```scss
@@ -277,7 +279,7 @@ Following example is written in SCSS and demonstrates how more feature complete 
 
 ## :point_left: Links
 
-![](media/asian.jpg)
+![](media/sepia.jpg)
 
 Link on additional tools and resources
 
