@@ -18,10 +18,10 @@ its principals can be applied regardless of technology used.
 
 ## :ok_hand: Philosophy is Based on:
 
-- :point_right: **Concern separation** - *Template should describe what no how*
-- :point_right: **Determinism** - *Styles should contain whole information*
-- :point_right: **Avoiding Globals** - *Using namespaces over global names*
-- :point_right: **Equality** - *"Nested" rules have same specificity*
+- :point_right: **Concern separation** - *HTML describes what no how*
+- :point_right: **Determinism** - *Styles contains whole information about rules applied*
+- :point_right: **Avoiding Globals** - *Namespaces over global names*
+- :point_right: **Equality** - *"Nested" rules have same specificity as top ones*
 - :point_right: **Maintainability** - *Following all previous rules this is ultimate goal you have for free*
 
 **This document is in state of draft and might change rapidly over time.**
