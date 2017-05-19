@@ -54,32 +54,32 @@ than listed.
 
 This is list of the most important rules to follow.
 
-### Only `style.[extension]` filename is allowed for definitions containing rules.
+### :fist: Only `style.[extension]` filename is allowed for definitions containing rules.
 
 Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak Css are focused on nesting.
 For instance if your project's source code lives in `src` directory and contains `App` and `Menu` module
 your styles should live in `src/style.scss` - containing only app styles and `@import ./Menu/style.scss` and `src/Menu/style.scss`.
 
-### Reuse can be done only via `@mixin`s and `$variable`s.
+### :grimacing: Reuse can be done only via `@mixin`s and `$variable`s.
 
 Don't mix class names in view layer to compose different rules. All reuse should be done on Css level itself.
 You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
 any direct rules.
 
-### Only class selectors can be used in styles.
+### :point_up: Only class selectors can be used in styles.
 
 Don't use ids and tag names. Styling tags can be useful only to style content provided by user if he/she is
 able to provide Html template in your system. Even then these rules should be namespaced to element containing this
 logic.
 
-### Everything is namespaced by module.
+### :open_hands:  Everything is namespaced by module.
 
 The very top rule is definition of module rule. This is defined by class like `.menu`. Similarly to BEM namespace
 and elements are usually separated by `__`. This means that `list` within menu has selector like `.menu__list`.
 **Namespace is always same as module name**. If your styles live in `Menu/style.scss` namespace is `menu`.
 If styles live in `Post/Show/style.scss` namespace should be `post__show`.
 
-### All mixins and variables are defined within file or file explicitly imported.
+### :hand: All mixins and variables are defined within file or file explicitly imported.
 
 Don't use variables defined in parent. Ideally you can also define also variables only in namespace like:
 
@@ -93,7 +93,7 @@ Don't use variables defined in parent. Ideally you can also define also variable
 If you need to reuse any variable or mixin put these in separate file and use explicit import on all places needed.
 This will help you with reduce of redundant code. It's easier to add code than to remove it.
 
-### Elements classes can be nested by prefixes.
+### :raised_hands: Elements classes can be nested by prefixes.
 
 Within module namespace element rules are defined. Those elements can be nested using `--` separator like:
 
@@ -119,12 +119,12 @@ In SCSS (or Sass if you with) this can be written as follows:
 
 **There it's allowed to use mixins and variables defined in upper scope!**
 
-### Sub-module shouldn't depend on it's parent.
+### :beers: Sub-module shouldn't depend on it's parent.
 
 Sub-Module should be independent on it's parent. It's a parent that has dependency on its children (via `@import`s)
 no other way around. This helps you to separate concerns and make smaller pieces easier to abstract, reuse or separate in future.
 
-### State is secondary class name.
+### :fingers-crossed: State is secondary class name.
 
 The only higher specificity selectors are one containing state indicator. State unlike element selector is simple descriptive class name.
 States are always used together with original selector in styles like:
@@ -148,15 +148,15 @@ or in SCSS:
 You can think about them as about your own extension to selectors like `:active`, `:focused` and similar.
 States can be combined if needed.
 
-### Don't use `!important`.
+### :exclamation: Don't use `!important`.
 
 Seriously, don't.
 
-### Mixins are always first.
+### :ok_hand: Mixins are always first.
 
 Mixins should be defined before any rule. You don't want to hide fact that mixin is overwriting direct rule, do you?
 
-### Be nice while enforcing any of these rules!
+### :heart: Be nice while enforcing any of these rules!
 
 This is really important rule. Weak Css tries to make every-ones life a bit easier not worst.
 If you feel someone did something badly never use this document as tool for punishing them.
