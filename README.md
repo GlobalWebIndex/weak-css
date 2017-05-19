@@ -54,13 +54,13 @@ than listed.
 
 This is list of the most important rules to follow.
 
-### :fist: Only `style.[extension]` filename is allowed for definitions containing rules.
+### :fist: Only style.scss filename is allowed for definitions containing rules.
 
 Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak Css are focused on nesting.
 For instance if your project's source code lives in `src` directory and contains `App` and `Menu` module
 your styles should live in `src/style.scss` - containing only app styles and `@import ./Menu/style.scss` and `src/Menu/style.scss`.
 
-### :grimacing: Reuse can be done only via `@mixin`s and `$variable`s.
+### :grimacing: Reuse can be done only via @mixins and $variables.
 
 Don't mix class names in view layer to compose different rules. All reuse should be done on Css level itself.
 You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
@@ -124,7 +124,7 @@ In SCSS (or Sass if you with) this can be written as follows:
 Sub-Module should be independent on it's parent. It's a parent that has dependency on its children (via `@import`s)
 no other way around. This helps you to separate concerns and make smaller pieces easier to abstract, reuse or separate in future.
 
-### :fingers-crossed: State is secondary class name.
+### :wink: State is secondary class name.
 
 The only higher specificity selectors are one containing state indicator. State unlike element selector is simple descriptive class name.
 States are always used together with original selector in styles like:
@@ -148,7 +148,7 @@ or in SCSS:
 You can think about them as about your own extension to selectors like `:active`, `:focused` and similar.
 States can be combined if needed.
 
-### :exclamation: Don't use `!important`.
+### :exclamation: Don't use !important.
 
 Seriously, don't.
 
@@ -164,38 +164,37 @@ Remember your own mistakes. Folks also have their right to disagree with these o
 Being nice and opened doesn't mean you have to buy everything. Please keep all discussion on constructive
 level yourself and then expect other to follow your example.
 
-## :fingers-crossed: Additional Rules to Consider
+## :question:  Additional Rules to Consider
 
 ![](media/skull.jpg)
 
 There are few more additional rules that can be applied. Usually it's good to enforce those once project itself
 spawn spike or MVP phase and maintainability becomes primary concern.
 
-### Isolation over DRY.
+### :see_no_evil: Isolation over DRY.
 
 Many similarities in UI are just accidental. In first version A and B maybe has same color and font but will it have same in next version?
 It's always safer to choose isolation over reuse. With too much reuse can you be really sure you're not touching something you don't want to touch?
 How much of the reused rules will become overwritten in all places over time?
 
-### Avoid Global Rules.
+### :hear_no_evil: Avoid Global Rules.
 
 Don't use rules on global level. Globals are really hard to change later and might generate tons of redundant code over time.
 
-### Limit `z-index`es.
+### :monkey: Limit z-indexes.
 
 Order in view level matters anyway. Don't be afraid to use it to deal with layering! Z-indexes can be really painful when there
 is too much of them. Can you really thing about all combinations them? In larger app hardly. Question every z-index used.
 
-### Properties which affect layout calculation should be first.
+### :confused: Properties which affect layout calculation should be first.
 
 We don't like ideas of ordering css properties alphabetically. Instead we're in favour of putting most important -
 Ones which affects other elements or layout itself first. This means `display`, `position` or `width`
 should be always before `color`, `border-radius` or `font-style`.
 
-### No reset styles
+### :alien: No reset styles
 
 Do you really know what all your resets are doing? How much will you be afraid to change or delete them in year or two from now?
-
 
 ## :construction_worker: Example
 
