@@ -16,7 +16,7 @@ In Weak Css we're not talking about *Block, Element and Modifier* but rather abo
 like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
 its pinciples can be used regardless on technology used.
 
-## :thinking_face: Philosophy is Based on:
+## :ok_hand: Philosophy is Based on:
 
 - :point_right: Concern separation - *Template should describe what no how*
 - :point_right: Determinism - *Styles should contain whole information*
@@ -164,7 +164,7 @@ Remember your own mistakes. Folks also have their right to disagree with these o
 Being nice and opened doesn't mean you have to buy everything. Please keep all discussion on constructive
 level yourself and then expect other to follow your example.
 
-## :spock-hand: Additional Rules to Consider
+## :fingers-crossed: Additional Rules to Consider
 
 ![](media/skull.jpg)
 
