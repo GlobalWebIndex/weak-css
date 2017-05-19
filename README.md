@@ -38,7 +38,7 @@ democratic agreement of people imposed to follow them.
 
 ![](media/mozzaic.jpg)
 
-Css are way too complex. Not necessary complex learn or to understand but complex to reason about.
+CSS are way too complex. Not necessary complex learn or to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
 many rules can be mixed together each with different specificity. Especially in growing systems
 this complexity can reach the point of very high maintenance cost quickly.
@@ -56,13 +56,13 @@ This is list of the most important rules to follow.
 
 ### :fist: Only style.scss filename is allowed for definitions containing rules.
 
-Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak Css are focused on nesting.
+Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak CSS are focused on nesting.
 For instance if your project's source code lives in `src` directory and contains `App` and `Menu` module
 your styles should live in `src/style.scss` - containing only app styles and `@import ./Menu/style.scss` and `src/Menu/style.scss`.
 
 ### :grimacing: Reuse can be done only via @mixins and $variables.
 
-Don't mix class names in view layer to compose different rules. All reuse should be done on Css level itself.
+Don't mix class names in view layer to compose different rules. All reuse should be done on CSS level itself.
 You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
 any direct rules.
 
@@ -93,7 +93,7 @@ Don't use variables defined in parent. Ideally you can also define also variable
 If you need to reuse any variable or mixin put these in separate file and use explicit import on all places needed.
 This will help you with reduce of redundant code. It's easier to add code than to remove it.
 
-### :raised_hands: Elements classes can be nested by prefixes.
+### :raised_hands: Element classes can be nested by prefixes.
 
 Within module namespace element rules are defined. Those elements can be nested using `--` separator like:
 
@@ -158,7 +158,7 @@ Mixins should be defined before any rule. You don't want to hide fact that mixin
 
 ### :heart: Be nice while enforcing any of these rules!
 
-This is really important rule. Weak Css tries to make every-ones life a bit easier not worst.
+This is really important rule. Weak CSS tries to make everyone's life a bit easier not worst.
 If you feel someone did something badly never use this document as tool for punishing them.
 Remember your own mistakes. Folks also have their right to disagree with these or any other rules.
 Being nice and opened doesn't mean you have to buy everything. Please keep all discussion on constructive
@@ -284,12 +284,12 @@ Following example is written in SCSS and demonstrates how more feature complete 
 
 Link on additional tools and resources
 
-### Elm abstraction for working with Weak Css styles
+### Elm abstraction for working with Weak CSS styles
 
 [class-namespaces](https://github.com/GlobalWebIndex/class-namespaces) is our in-house library based on ideas described in this document
 released under BSD-3-Cause license. It's our preferable implementation for view logic in Elm.
 
-### Side-Effects in Css
+### Side-Effects in CSS
 
 is [Philip Walton's article describing problems with CSS](https://philipwalton.com/articles/side-effects-in-css/). Author prefers BEM
 as solution for problems he describes but we still consider this to be really high quality resource about this topic.
