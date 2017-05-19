@@ -1,6 +1,6 @@
-# Weak CSS
+# :speak_no_evil: Weak CSS
 
-**status: draft**
+status: **draft**
 
 ![](media/life.jpg)
 
