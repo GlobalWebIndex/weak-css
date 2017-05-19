@@ -203,7 +203,7 @@ Do you really know what all your resets are doing? How much will you be afraid t
 Following example is written in SCSS and demonstrates how more feature complete implementation can look like.
 
 ```scss
-# src/Dialogs/style.scss
+// src/Dialogs/style.scss
 
 .dialogs {
     $color-bg: #7c2494;
@@ -218,7 +218,8 @@ Following example is written in SCSS and demonstrates how more feature complete 
     border-radius: $border-radius;
     color: #fff;
     background: $color-bg;
-    z-index: 1000;
+    // rocket launcher here
+    z-index: 100;
 
     &__header {
         position: relative;
