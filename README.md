@@ -36,7 +36,7 @@ democratic agreement of people imposed to follow them.
 
 ## :wave: Introduction
 
-![](media/asian.jpg)
+![](media/mozzaic.jpg)
 
 Css are way too complex. Not complex to learn nor to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
@@ -50,7 +50,7 @@ than listed.
 
 ## :point_up: Basic Rules
 
-![](media/mozzaic.jpg)
+![](media/asian.jpg)
 
 This is list of the most important rules to follow.
 
