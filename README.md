@@ -1,20 +1,22 @@
 # Weak CSS
 
-**STATUS: DRAFT**
+**status: draft**
 
 Weak Css is methodology and naming convention for Html and Css classes which prioritise weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
 To some degree it's based on [BEM](http://getbem.com/) philosophy even though one might see
 similarities with [OOCSS](http://oocss.org/) as well.
 
+![](media/head.jpg)
+
 Weak Css prefers BEM's determinism and OOCSS's modularity but takes both on different level.
 In Weak Css we're not talking about *Block, Element and Modifier* but rather about
-**Namespaced Module, Element Path and State**. Weak Css is designed to be used with
-**Css pre-processors** like [SASS](http://sass-lang.com/) and **declarative views** layer
+**Namespaced Module, Element Path and its State**. It is designed to be used with
+**Css pre-processors** like [SASS](http://sass-lang.com/) and prefers **declarative views** layer
 like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
-same principles can be applied using any other technology.
+its pinciples can be used regardless on technology used.
 
-Philosophy is based on:
+## Philosophy is based on:
 
 - Concern separation - *Template should describe what no how*
 - Determinism - *Styles should contain whole information*
@@ -43,6 +45,9 @@ BEM methodology is nice solution to this problem however not every UI is really 
 Block, Element and modifier. From our experience pure beam can lead to real explosion of
 names on Element level namespace especially in applications where UI seems to be rather nested
 than listed.
+
+
+![](media/middle.jpg)
 
 ## Basic Rules
 
@@ -187,6 +192,8 @@ should be always before `color`, `border-radius` or `font-style`.
 ### No reset styles
 
 Do you really know what all your resets are doing? How much will you be afraid to change or delete them in year or two from now?
+
+![](media/bottom.jpg)
 
 ## Example
 
