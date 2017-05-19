@@ -16,17 +16,17 @@ In Weak Css we're not talking about *Block, Element and Modifier* but rather abo
 like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
 its pinciples can be used regardless on technology used.
 
-## Philosophy is Based on:
+## :thinking_face: Philosophy is Based on:
 
-- Concern separation - *Template should describe what no how*
-- Determinism - *Styles should contain whole information*
-- Avoiding Globals - *Using namespaces over global names*
-- Equality - *"Nested" rules have same specificity*
-- Maintainability - *Following all previous rules this is ultimate goal you have for free*
+- :point_right: Concern separation - *Template should describe what no how*
+- :point_right: Determinism - *Styles should contain whole information*
+- :point_right: Avoiding Globals - *Using namespaces over global names*
+- :point_right: Equality - *"Nested" rules have same specificity*
+- :point_right: Maintainability - *Following all previous rules this is ultimate goal you have for free*
 
 **This document is in state of Draft and can change rapidly over time!**
 
-## Disclaimer
+## :mask: Disclaimer
 
 Practices described bellow comes from our experiences with building web based applications using web technologies.
 By any mean this is not attempt to either enforce nor convince anyone follow any of this advice.
@@ -34,7 +34,7 @@ We strongly believe in everyone's or any group's right to chose or deny any prac
 We hope all potential adoptions of rules described within this document will be motivated by
 democratic agreement of people imposed to follow them.
 
-## Introduction
+## :wave: Introduction
 
 ![](media/sepia.jpg)
 
@@ -48,7 +48,7 @@ Block, Element and modifier. From our experience pure beam can lead to real expl
 names on Element level namespace especially in applications where UI seems to be rather nested
 than listed.
 
-## Basic Rules
+## :point_up: Basic Rules
 
 ![](media/mozzaic.jpg)
 
@@ -164,7 +164,7 @@ Remember your own mistakes. Folks also have their right to disagree with these o
 Being nice and opened doesn't mean you have to buy everything. Please keep all discussion on constructive
 level yourself and then expect other to follow your example.
 
-## Additional Rules to Consider
+## :spock-hand: Additional Rules to Consider
 
 ![](media/skull.jpg)
 
@@ -197,7 +197,7 @@ should be always before `color`, `border-radius` or `font-style`.
 Do you really know what all your resets are doing? How much will you be afraid to change or delete them in year or two from now?
 
 
-## Example
+## :construction_worker: Example
 
 Following example is written in SCSS and demonstrates how more feature complete implementation can look like.
 
@@ -257,15 +257,17 @@ Following example is written in SCSS and demonstrates how more feature complete 
             margin-right: 5px;
             border-radius: 50px;
             border: 2px solid #fff;
-            color: #fff;
         }
 
         &--no {
             @include button;
+
+            color: #fff;
         }
 
         &--yes {
             @include button;
+
             color: $color-bg;
             background: #fff;
         }
@@ -274,7 +276,7 @@ Following example is written in SCSS and demonstrates how more feature complete 
 
 ```
 
-## Links
+## :point_left: Links
 
 ![](media/asian.jpg)
 
@@ -290,7 +292,7 @@ released under BSD-3-Cause license. It's our preferable implementation for view 
 is [Philip Walton's article describing problems with CSS](https://philipwalton.com/articles/side-effects-in-css/). Author prefers BEM
 as solution for problems he describes but we still consider this to be really high quality resource about this topic.
 
-## Final Thoughts
+## :raised_hands:  Final Thoughts
 
 ![](media/all.jpg)
 
