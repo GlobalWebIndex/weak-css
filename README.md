@@ -4,17 +4,17 @@ status: **draft**
 
 ![](media/life.jpg)
 
-Weak Css is methodology and naming convention for Html and Css classes which prioritize weak
+Weak CSS is methodology and naming convention for HTML and CSS classes which prioritize weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
 To some degree it's based on [BEM](http://getbem.com/) philosophy even though one might see
 similarities with [OOCSS](http://oocss.org/) as well.
 
-Weak Css prefers BEM's determinism and OOCSS's modularity but takes both on different level.
-In Weak Css we're not talking about *Block, Element and Modifier* but rather about
-**Namespaced Module, Element Path and its State**. It is designed to be used with
-**Css pre-processors** like [SASS](http://sass-lang.com/) and prefers **declarative views** layer
-like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
-its principals can be used regardless on technology used.
+Weak CSS prefers BEM's determinism and OOCSS's modularity but takes both on different level.
+In Weak CSS we're not talking about *Block, Element and Modifier* but rather about
+**Namespaced Module, Element Path and its State**. It's designed to be used with
+**CSS pre-processors** like [SASS](http://sass-lang.com/) and prefers **declarative views** layer
+similar to [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
+its principals can be applied regardless of technology used.
 
 ## :ok_hand: Philosophy is Based on:
 
