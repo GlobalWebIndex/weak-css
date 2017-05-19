@@ -4,7 +4,7 @@ status: **draft**
 
 ![](media/life.jpg)
 
-Weak Css is methodology and naming convention for Html and Css classes which prioritise weak
+Weak Css is methodology and naming convention for Html and Css classes which prioritize weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
 To some degree it's based on [BEM](http://getbem.com/) philosophy even though one might see
 similarities with [OOCSS](http://oocss.org/) as well.
@@ -14,22 +14,22 @@ In Weak Css we're not talking about *Block, Element and Modifier* but rather abo
 **Namespaced Module, Element Path and its State**. It is designed to be used with
 **Css pre-processors** like [SASS](http://sass-lang.com/) and prefers **declarative views** layer
 like [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
-its pinciples can be used regardless on technology used.
+its principals can be used regardless on technology used.
 
 ## :ok_hand: Philosophy is Based on:
 
-- :point_right: Concern separation - *Template should describe what no how*
-- :point_right: Determinism - *Styles should contain whole information*
-- :point_right: Avoiding Globals - *Using namespaces over global names*
-- :point_right: Equality - *"Nested" rules have same specificity*
-- :point_right: Maintainability - *Following all previous rules this is ultimate goal you have for free*
+- :point_right: **Concern separation** - *Template should describe what no how*
+- :point_right: **Determinism** - *Styles should contain whole information*
+- :point_right: **Avoiding Globals** - *Using namespaces over global names*
+- :point_right: **Equality** - *"Nested" rules have same specificity*
+- :point_right: **Maintainability** - *Following all previous rules this is ultimate goal you have for free*
 
-**This document is in state of Draft and can change rapidly over time!**
+**This document is in state of draft and might change rapidly over time.**
 
 ## :mask: Disclaimer
 
 Practices described bellow comes from our experiences with building web based applications using web technologies.
-By any mean this is not attempt to either enforce nor convince anyone follow any of this advice.
+By any mean this is not attempt to either enforce or convince anyone follow any of this advice.
 We strongly believe in everyone's or any group's right to chose or deny any practice they wish.
 We hope all potential adoptions of rules described within this document will be motivated by
 democratic agreement of people imposed to follow them.
@@ -38,13 +38,13 @@ democratic agreement of people imposed to follow them.
 
 ![](media/mozzaic.jpg)
 
-Css are way too complex. Not complex to learn nor to understand but complex to reason about.
+Css are way too complex. Not necessary complex learn or to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
 many rules can be mixed together each with different specificity. Especially in growing systems
-this complexity can reach the point of very high maintenance quickly.
+this complexity can reach the point of very high maintenance cost quickly.
 
 BEM methodology is nice solution to this problem however not every UI is really composed with
-Block, Element and modifier. From our experience pure beam can lead to real explosion of
+Block, Element and modifier. From our experience pure BEM can lead to real explosion of
 names on Element level namespace especially in applications where UI seems to be rather nested
 than listed.
 
