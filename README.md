@@ -14,13 +14,15 @@ In Weak CSS we're not talking about *Block, Element and Modifier* but rather abo
 similar to [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
 its principals can be applied regardless of technology used.
 
+![](media/description.png)
+
 ## :ok_hand: Philosophy is Based on:
 
-- :point_right: **Concern separation** - *HTML describes what no how*
-- :point_right: **Determinism** - *Styles contains whole information about rules applied*
-- :point_right: **Avoiding Globals** - *Namespaces over global names*
-- :point_right: **Equality** - *"Nested" rules have same specificity as top ones*
-- :point_right: **Maintainability** - *Following all previous rules this is ultimate goal you have for free*
+- :point_right: **Concern separation** - *HTML describes "what" no "how" - using single class name.*
+- :point_right: **Determinism** - *Styles contains whole information about rules applied - by mixins and limited inherit rules.*
+- :point_right: **Avoiding Globals** - *Namespaces over global names - everything is prefixed to limit side-effects.*
+- :point_right: **Equality** - *"Nested" rules have same specificity as top ones.*
+- :point_right: **Maintainability** - *Following all previous rules you have this ultimate goal for free.*
 
 **This document is in state of draft and might change rapidly over time.**
 
