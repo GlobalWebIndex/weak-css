@@ -55,7 +55,7 @@ This is why `state` as addition class is used over modifier.
 
 This is list of the most important rules to follow.
 
-### :fist: Only style.scss filename is allowed for files containing selectors.
+### :fist: Only style.scss name is allowed for files containing selectors.
 
 Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak CSS are focused on nesting.
 For instance if your project's source code lives in `src` directory and contains `App` and `Menu` module
@@ -63,15 +63,14 @@ your styles should live in `src/style.scss` - containing only app styles and `@i
 
 ### :grimacing: Reuse can be done only via @mixins and $variables.
 
-Don't mix class names in view layer to compose different rules. All reuse should be done on CSS level itself.
+Don't mix class names in view layer to compose different rules. All reuse should be done on CSS level.
 You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
 any direct selectors.
 
 ### :point_up: Only class selectors can be used in styles.
 
 Don't use ids and tag names. Styling tags can be useful only to style content provided by user if he/she is
-able to provide Html template in your system. Even then these rules should be namespaced to element containing this
-logic.
+able to provide Html template in your system. Even then these rules should be namespaced to element containing these elements.
 
 ### :open_hands:  Everything is namespaced by module.
 
@@ -94,7 +93,7 @@ Don't use variables defined in parent. Ideally you can also define also variable
 If you need to reuse any variable or mixin put these in separate file and use explicit import on all places needed.
 This will help you with reduce of redundant code. It's easier to add code than to remove it.
 
-### :raised_hands: Element classes can be nested by prefixes.
+### :raised_hands: Element classes can be nested using separators.
 
 Within module namespace element rules are defined. Those elements can be nested using `--` separator like:
 
@@ -104,7 +103,7 @@ Within module namespace element rules are defined. Those elements can be nested 
 .menu__list--item {}
 ```
 
-In SCSS (or Sass if you with) this can be written as follows:
+In SCSS (or Sass if you wish) this can be written as follows:
 
 ```scss
 .menu {
@@ -153,17 +152,17 @@ States can be combined if needed.
 
 Seriously, don't.
 
-### :ok_hand: Mixins are always first.
+### :ok_hand: Mixins first.
 
 Mixins should be defined before any rule. You don't want to hide fact that mixin is overwriting direct rule, do you?
 
 ### :heart: Be nice while enforcing any of these rules!
 
-This is really important rule. Weak CSS tries to make everyone's life a bit easier not worst.
+This is really important rule. Weak CSS tries to make everyone's life a bit easier not worse.
 If you feel someone did something badly never use this document as tool for punishing them.
 Remember your own mistakes. Folks also have their right to disagree with these or any other rules.
-Being nice and opened doesn't mean you have to buy everything. Please keep all discussion on constructive
-level yourself and then expect other to follow your example.
+Being nice and opened doesn't mean you have to buy everything. Please keep discussion on constructive
+note yourself and then expect other to follow your example.
 
 ## :question:  Additional Rules to Consider
 
@@ -174,8 +173,8 @@ spawn spike or MVP phase and maintainability becomes primary concern.
 
 ### :see_no_evil: Isolation over DRY.
 
-Many similarities in UI are just accidental. In first version A and B maybe has same color and font but will it have same in next version?
-It's always safer to choose isolation over reuse. With too much reuse can you be really sure you're not touching something you don't want to touch?
+Many similarities in UI are just accidental. In first version A and B maybe has same color and font but will it really be maintained in future versions?
+It's always safer to choose isolation over reuse. With too much reuse can you can't be sure if you're not touching something you don't want to touch.
 How much of the reused rules will become overwritten in all places over time?
 
 ### :hear_no_evil: Avoid Global Rules.
@@ -193,7 +192,7 @@ We don't like ideas of ordering css properties alphabetically. Instead we're in 
 Ones which affects other elements or layout itself first. This means `display`, `position` or `width`
 should be always before `color`, `border-radius` or `font-style`.
 
-### :alien: No reset styles
+### :alien: No resets styles
 
 Do you really know what all your resets are doing? How much will you be afraid to change or delete them in year or two from now?
 
@@ -293,7 +292,7 @@ released under BSD-3-Cause license. It's our preferable implementation for view 
 ### Side-Effects in CSS
 
 is [Philip Walton's article describing problems with CSS](https://philipwalton.com/articles/side-effects-in-css/). Author prefers BEM
-as solution for problems he describes but we still consider this to be really high quality resource about this topic.
+as solution for problems he describes but we still consider this to be really high quality resource for this topic.
 
 ## :raised_hands:  Final Thoughts
 
