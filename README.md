@@ -1,6 +1,6 @@
 # :speak_no_evil: Weak CSS
 
-![status](media/status.svg)
+![status](https://raw.githubusercontent.com/GlobalWebIndex/weak-css/chore/improve_readme/media/status.svg?token=ACCBgQ-Emu3e7hTb5-6uiGZJgCX9Xfu6ks5ZLSyrwA%3D%3D)
 
 ![](media/life.jpg)
 
