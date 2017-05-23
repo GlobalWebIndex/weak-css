@@ -1,8 +1,6 @@
-# :speak_no_evil: Weak CSS
+# :speak_no_evil: Weak CSS <img src="media/status.svg" width="90" height="20">
 
 ![](media/life.jpg)
-
-<img src="media/status.png" width="90" height="40">
 
 Weak CSS is methodology and naming convention for HTML and CSS classes which prioritize weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
