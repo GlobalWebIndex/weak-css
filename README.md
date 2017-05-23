@@ -54,7 +54,7 @@ than listed.
 
 This is list of the most important rules to follow.
 
-### :fist: Only style.scss filename is allowed for definitions containing rules.
+### :fist: Only style.scss filename is allowed for files containing selectors.
 
 Only `style.scss` and similar (eg. `styles.scss` if you want) is allowed as filename for styles. Weak CSS are focused on nesting.
 For instance if your project's source code lives in `src` directory and contains `App` and `Menu` module
@@ -64,7 +64,7 @@ your styles should live in `src/style.scss` - containing only app styles and `@i
 
 Don't mix class names in view layer to compose different rules. All reuse should be done on CSS level itself.
 You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
-any direct rules.
+any direct selectors.
 
 ### :point_up: Only class selectors can be used in styles.
 
