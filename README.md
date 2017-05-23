@@ -2,7 +2,7 @@
 
 ![](media/life.jpg)
 
-![status](media/status.png)
+<img src="media/status.png" width="90" height="40">
 
 Weak CSS is methodology and naming convention for HTML and CSS classes which prioritize weak
 [specificity](http://cssspecificity.com/) over complex selectors so styles won't fight you.
