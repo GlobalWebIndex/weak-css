@@ -21,8 +21,8 @@ its principals can be applied regardless of technology used.
 ## :ok_hand: Philosophy is Based on:
 
 - :point_right: **Concern separation** - *HTML describes "what" no "how" - using single class name.*
-- :point_right: **Determinism** - *Styles contains whole information about rules applied - by mixins and limited inherit rules.*
-- :point_right: **Avoiding Globals** - *Namespaces over global names - everything is prefixed to limit side-effects.*
+- :point_right: **Determinism** - *Styles contains whole information about rules applied - mixins over inherited rules.*
+- :point_right: **Avoiding Globals** - *Namespaces over global names - everything is prefixed.*
 - :point_right: **Equality** - *"Nested" rules have same specificity as top ones.*
 - :point_right: **Maintainability** - *Following all previous rules you have this ultimate goal for free.*
 
@@ -46,7 +46,8 @@ this complexity can reach the point of very high maintenance cost quickly.
 BEM methodology is nice solution to this problem however not every UI is really composed with
 Block, Element and modifier. From our experience pure BEM can lead to real explosion of
 names on Element level namespace especially in applications where UI seems to be rather nested
-than listed.
+than listed. Also modifiers tend to fight with pseudo selectors.
+This is why `state` as addition class is used over modifier.
 
 ## :point_up: Basic Rules
 
