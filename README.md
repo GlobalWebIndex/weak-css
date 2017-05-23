@@ -16,6 +16,8 @@ its principals can be applied regardless of technology used.
 
 ![](media/description.png)
 
+**This document is in state of draft and might change rapidly over time.**
+
 ## :ok_hand: Philosophy is Based on:
 
 - :point_right: **Concern separation** - *HTML describes "what" no "how" - using single class name.*
@@ -23,8 +25,6 @@ its principals can be applied regardless of technology used.
 - :point_right: **Avoiding Globals** - *Namespaces over global names - everything is prefixed to limit side-effects.*
 - :point_right: **Equality** - *"Nested" rules have same specificity as top ones.*
 - :point_right: **Maintainability** - *Following all previous rules you have this ultimate goal for free.*
-
-**This document is in state of draft and might change rapidly over time.**
 
 ## :mask: Disclaimer
 
