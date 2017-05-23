@@ -1,6 +1,6 @@
 # :speak_no_evil: Weak CSS
 
-![stats: draft](media/status.svg)
+![status](media/status.svg)
 
 ![](media/life.jpg)
 
