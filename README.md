@@ -1,4 +1,6 @@
-# :speak_no_evil: Weak CSS <img src="media/status.png" width="90" height="20">
+# :speak_no_evil: Weak CSS
+
+<img src="media/status.png" width="90" height="20">
 
 ![](media/life.jpg)
 
