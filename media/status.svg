@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 90 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path d="M90,3C90,1.344 88.656,0 87,0L3,0C1.344,0 0,1.344 0,3L0,17C0,18.656 1.344,20 3,20L87,20C88.656,20 90,18.656 90,17L90,3Z" style="fill:rgb(85,85,85);"/>
+    <path d="M90,3C90,1.344 88.656,0 87,0L40,0C38.344,0 37,1.344 37,3L37,17C37,18.656 38.344,20 40,20L87,20C88.656,20 90,18.656 90,17L90,3Z" style="fill:rgb(68,204,17);"/>
+    <path d="M37,0L41,0L41,20L37,20L37,0Z" style="fill:rgb(68,204,17);fill-rule:nonzero;"/>
+    <path d="M90,3C90,1.344 88.656,0 87,0L3,0C1.344,0 0,1.344 0,3L0,17C0,18.656 1.344,20 3,20L87,20C88.656,20 90,18.656 90,17L90,3Z" style="fill:url(#_Linear1);"/>
+    <g>
+        <g transform="matrix(1,0,0,1,19.5,15)">
+            <text x="-14.674px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:11px;fill:rgb(1,1,1);fill-opacity:0.298039;">status</text>
+        </g>
+        <g transform="matrix(1,0,0,1,19.5,13)">
+            <text x="-14.674px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:11px;fill:white;">status</text>
+        </g>
+        <g transform="matrix(1,0,0,1,62.5,15)">
+            <text x="-19.973px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:9px;fill:rgb(1,1,1);fill-opacity:0.298039;">¯\_(</text>
+            <text x="-4.5px" y="0px" style="font-family:'STHeitiSC-Medium', 'Heiti SC';font-size:9px;fill:rgb(1,1,1);fill-opacity:0.298039;">ツ</text>
+            <text x="4.5px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:9px;fill:rgb(1,1,1);fill-opacity:0.298039;">)_/¯</text>
+        </g>
+        <g transform="matrix(1,0,0,1,62.5,13)">
+            <text x="-19.973px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:9px;fill:white;">¯\_(</text>
+            <text x="-4.5px" y="0px" style="font-family:'STHeitiSC-Medium', 'Heiti SC';font-size:9px;fill:white;">ツ</text>
+            <text x="4.5px" y="0px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:9px;fill:white;">)_/¯</text>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.22465e-15,20,-20,1.22465e-15,0,0)"><stop offset="0" style="stop-color:rgb(187,187,187);stop-opacity:0.0980392"/><stop offset="1" style="stop-color:black;stop-opacity:0.0980392"/></linearGradient>
+    </defs>
+</svg>
