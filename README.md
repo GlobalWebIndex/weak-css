@@ -7,12 +7,12 @@ Weak CSS is methodology and naming convention for HTML and CSS classes which pri
 To some degree it's based on [BEM](http://getbem.com/) philosophy even though one might see
 similarities with [OOCSS](http://oocss.org/) (namely state as secondary class) as well.
 
-Weak CSS prefers BEM's determinism but takes it on different level by being even more strict.
+Weak CSS embraces BEM's determinism but takes it to a next level by being even more strict.
 In Weak CSS we're not talking about *Block, Element and Modifier* but rather about
 **Namespaced Module, Element Path and its State**. It's designed to be used with
 **CSS pre-processors** like [SASS](http://sass-lang.com/) and prefers **declarative views** layer
-similar to [elm-lang/html](http://package.elm-lang.org/packages/elm-lang/html/latest) even though
-its principals can be applied regardless of technology used.
+similar to [elm/html](https://package.elm-lang.org/packages/elm/html/latest/) even though
+its principles can be applied regardless of technology used.
 
 ![](media/description.png)
 
@@ -20,16 +20,16 @@ its principals can be applied regardless of technology used.
 
 ## :ok_hand: Philosophy is Based on:
 
-- :point_right: **Concern separation** - *HTML describes "what" no "how" - using single class name.*
-- :point_right: **Determinism** - *Styles contains whole information about rules applied - mixins over inherited rules.*
+- :point_right: **Separation of concerns** - *HTML describes "what" no "how" - using single class name.*
+- :point_right: **Determinism** - *Styles contain whole information about rules applied - mixins over inherited rules.*
 - :point_right: **Avoiding Globals** - *Namespaces over global names - everything is prefixed.*
-- :point_right: **Equality** - *"Nested" rules have same specificity as top ones.*
+- :point_right: **Equality** - *"Nested" rules have same specificity as top-level ones.*
 - :point_right: **Maintainability** - *Following all previous rules you have this ultimate goal for free.*
 
 ## :mask: Disclaimer
 
-Practices described bellow comes from our experiences with building web based applications using web technologies.
-By any mean this is not attempt to either enforce or convince anyone follow any of this advice.
+Practices described bellow come from our experiences with building web based applications using web technologies.
+By no means is this an attempt to either force or convince anyone to follow any of this advice.
 We strongly believe in everyone's or any group's right to chose or deny any practice they wish.
 We hope all potential adoptions of rules described within this document will be motivated by
 democratic agreement of people imposed to follow them.
@@ -38,7 +38,7 @@ democratic agreement of people imposed to follow them.
 
 ![](media/mozzaic.jpg)
 
-CSS are way too complex. Not necessary too complex to learn or to understand but complex to reason about.
+CSS are way too complex. Not necessarily too complex to learn or to understand but complex to reason about.
 Given some set of rules it's really hard to tell what actual result will look like since
 many rules can be mixed together each with different specificity. Especially in growing systems
 this complexity can reach the point of very high maintenance cost quickly.
@@ -47,7 +47,7 @@ BEM methodology is nice solution to this problem however not every UI is really 
 Block, Element and modifier. From our experience pure BEM can lead to real explosion of
 names on Element level namespace especially in applications where UI seems to be rather nested
 than listed. Also modifiers tend to fight with pseudo selectors.
-This is why `state` as addition class is used over modifier.
+This is why `state` as additional class is used over modifier.
 
 ## :point_up: Basic Rules
 
@@ -64,7 +64,7 @@ your styles should live in `src/style.scss` - containing only app styles and `@i
 ### :grimacing: Reuse can be done only via @mixins and $variables.
 
 Don't mix class names in view layer to compose different rules. All reuse should be done on CSS level.
-You can have file like `utilities.scss`, `mixins.scss` or `variables.scss` as long as this file do not contain
+You can have files like `utilities.scss`, `mixins.scss` or `variables.scss` as long as these files do not contain
 any direct selectors.
 
 ### :point_up: Only class selectors can be used in styles.
@@ -76,12 +76,12 @@ able to provide Html template in your system. Even then these rules should be na
 
 The very top rule is definition of module rule. This is defined by class like `.menu`. Similarly to BEM namespace
 and elements are usually separated by `__`. This means that `list` within menu has selector like `.menu__list`.
-**Namespace is always same as module name**. If your styles live in `Menu/style.scss` namespace is `menu`.
+**Namespace is always the same as module name**. If your styles live in `Menu/style.scss` namespace is `menu`.
 If styles live in `Post/Show/style.scss` namespace should be `post__show`.
 
 ### :hand: All mixins and variables are defined within file or file explicitly imported.
 
-Don't use variables defined in parent. Ideally you can also define also variables only in namespace like:
+Don't use variables defined in parent. Ideally you can also define variables only in namespace like:
 
 ```scss
 .menu {
@@ -91,7 +91,7 @@ Don't use variables defined in parent. Ideally you can also define also variable
 ```
 
 If you need to reuse any variable or mixin put these in separate file and use explicit import on all places needed.
-This will help you with reduce of redundant code. It's easier to add code than to remove it.
+This will help you reduce code duplication. It's easier to add code than to remove it.
 
 ### :raised_hands: Element classes can be nested using separators.
 
@@ -117,16 +117,16 @@ In SCSS (or Sass if you wish) this can be written as follows:
 }
 ```
 
-**There it's allowed to use mixins and variables defined in upper scope!**
+**Using mixins and variables defined in upper scope is not allowed!**
 
 ### :beers: Sub-module shouldn't depend on it's parent.
 
-Sub-Module should be independent on it's parent. It's a parent that has dependency on its children (via `@import`s)
-no other way around. This helps you to separate concerns and make smaller pieces easier to abstract, reuse or separate in future.
+Sub-Module should be independent of its parent. It's a parent that has dependency on its children (via `@import`s)
+no the other way around. This helps you to separate concerns and make smaller pieces easier to abstract, reuse or separate in future.
 
 ### :wink: State is secondary class name.
 
-The only higher specificity selectors are one containing state indicator. State unlike element selector is simple descriptive class name.
+The only higher specificity selectors are the ones containing state indicator. State - unlike element selector - is simple descriptive class name.
 States are always used together with original selector in styles like:
 
 ```scss
@@ -145,7 +145,7 @@ or in SCSS:
 }
 ```
 
-You can think about them as about your own extension to selectors like `:active`, `:focused` and similar.
+You can think of them as your own extension to selectors like `:active`, `:focused` and similar.
 States can be combined if needed.
 
 ### :exclamation: Don't use !important.
@@ -162,7 +162,7 @@ This is really important rule. Weak CSS tries to make everyone's life a bit easi
 If you feel someone did something badly never use this document as tool for punishing them.
 Remember your own mistakes. Folks also have their right to disagree with these or any other rules.
 Being nice and opened doesn't mean you have to buy everything. Please keep discussion on constructive
-note yourself and then expect other to follow your example.
+note yourself and then expect others to follow your example.
 
 ## :question:  Additional Rules to Consider
 
@@ -173,8 +173,8 @@ spawn spike or MVP phase and maintainability becomes primary concern.
 
 ### :see_no_evil: Isolation over DRY.
 
-Many similarities in UI are just accidental. In first version A and B maybe has same color and font but will it really be maintained in future versions?
-It's always safer to choose isolation over reuse. With too much reuse can you can't be sure if you're not touching something you don't want to touch.
+Many similarities in UI are just accidental. In first version A and B may have the same color and font but will it really be maintained in future versions?
+It's always safer to choose isolation over reuse. With too much reuse you can't be sure if you're not touching something you don't want to touch.
 How much of the reused rules will become overwritten in all places over time?
 
 ### :hear_no_evil: Avoid Global Rules.
@@ -184,7 +184,7 @@ Don't use rules on global level. Globals are really hard to change later and mig
 ### :monkey: Limit z-indexes.
 
 Order in view level matters anyway. Don't be afraid to use it to deal with layering! Z-indexes can be really painful when there
-is too much of them. Can you really thing about all combinations them? In larger app hardly. Question every z-index used.
+is too much of them. Can you really think about all possible combinations? In larger app hardly. Question every z-index used.
 
 ### :confused: Properties which affect layout calculation should be first.
 
@@ -282,7 +282,7 @@ Following example is written in SCSS and demonstrates how more feature complete 
 
 ![](media/sepia.jpg)
 
-Link on additional tools and resources
+Links to additional tools and resources
 
 ### Elm abstraction for working with Weak CSS styles
 
@@ -299,4 +299,4 @@ as solution for problems he describes but we still consider this to be really hi
 ![](media/all.jpg)
 
 As with all "best practices" never stop questioning values/costs and their impact on your work. Following rules
-which doesn't make sense anymore or don't really fit your needs is maybe worse than having no rules at all.
+which don't make sense anymore or don't really fit your needs is maybe worse than having no rules at all.
